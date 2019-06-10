@@ -9,6 +9,8 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 !web/app/themes/porto
 !web/app/themes/ramelec
+!web/app/plugins/dynamic-featured-image
+!web/app/plugins/porto-functionality
 # WordPress
 web/wp
 web/.htaccess
