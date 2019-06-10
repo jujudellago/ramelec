@@ -1,5 +1,5 @@
 set :application, 'yc2016'
-set :repo_url, 'git@github.com:jujudellago/yc2016.git'
+set :repo_url, 'git@github.com:jujudellago/ramelec.git'
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)
