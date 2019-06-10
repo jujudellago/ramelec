@@ -16,7 +16,7 @@ set :tmp_dir, "/home/clients/8f347cab93accbe85a48539c7a219e9f/tmp"
 set :deploy_to, -> { "/home/clients/8f347cab93accbe85a48539c7a219e9f/bedrock/staging" }
 
 
-SSHKit.config.command_map[:composer] = "php-5.6 /home/clients/8f347cab93accbe85a48539c7a219e9f/bin/composer/composer.phar"
+SSHKit.config.command_map[:composer] = "php-7.2 -c ~/utils/php/php.ini  /home/clients/8f347cab93accbe85a48539c7a219e9f/bin/composer/composer.phar"
 
 SSHKit.config.command_map[:wp] ="~/bin/wp.sh"
 
@@ -40,6 +40,8 @@ set :wpcli_backup_db, true
 set :wpcli_local_db_backup_dir, 'config/backups'
 set :wpcli_local_uploads_dir, 'web/app/uploads/'
 set :wpcli_remote_uploads_dir, "#{shared_path.to_s}/web/app/uploads/"
+
+set :composer_install_flags, '--no-dev --prefer-dist --no-interaction  --optimize-autoloader'
 
 
 

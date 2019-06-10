@@ -7,7 +7,8 @@ web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
-
+!web/app/themes/porto
+!web/app/themes/ramelec
 # WordPress
 web/wp
 web/.htaccess
